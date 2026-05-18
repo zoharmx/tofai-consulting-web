@@ -50,14 +50,14 @@ export default function HeroSection() {
       <div className="absolute top-1/4 -left-1/4 w-96 h-96 bg-primary-500 rounded-full blur-[150px] opacity-20 animate-pulse" />
       <div className="absolute bottom-1/4 -right-1/4 w-96 h-96 bg-accent-cyan rounded-full blur-[150px] opacity-20 animate-pulse animation-delay-400" />
 
-      <div className="relative z-10 text-center px-6 max-w-5xl" ref={ref}>
+      <div className="relative z-10 text-center px-4 sm:px-6 w-full max-w-5xl min-w-0" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-primary-500/10 border border-primary-500/30 rounded-full text-primary-400 text-sm"
+          className="inline-flex items-center gap-2 mb-6 px-3 sm:px-4 py-2 bg-primary-500/10 border border-primary-500/30 rounded-full text-primary-400 text-xs sm:text-sm"
         >
-          <span className="relative flex h-2 w-2">
+          <span className="relative flex h-2 w-2 flex-shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary-500"></span>
           </span>
@@ -68,7 +68,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight"
+          className="text-[2.2rem] leading-[1.15] sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-4 sm:mb-6 break-words"
         >
           Intelligence{' '}
           <span className="gradient-text">
@@ -80,27 +80,27 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-base sm:text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto text-balance"
+          className="text-sm sm:text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed"
         >
-          TOFAI Consulting delivers enterprise AI — from{' '}
-          <span className="text-white font-semibold">multi-LLM voice agents</span> and intelligent automation to{' '}
-          <span className="text-white font-semibold">AI safety, alignment research</span>, red teaming, and{' '}
-          <span className="text-primary-400 font-semibold">legacy system modernization</span>.
+          <span className="font-semibold text-white">TOFAI Consulting</span> — enterprise AI from{' '}
+          <span className="text-white font-semibold">voice agents</span> and intelligent automation to{' '}
+          <span className="text-white font-semibold">AI safety & alignment</span>, red teaming, and{' '}
+          <span className="text-primary-400 font-semibold">legacy modernization</span>.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch sm:items-center"
         >
           <a
             href="https://cal.com/desarrollo-marketing-y-tecnologia-lqmiht"
             target="_blank"
             rel="noopener noreferrer"
-            className="group btn-primary"
+            className="group btn-primary justify-center"
           >
-            <Calendar className="w-5 h-5" />
+            <Calendar className="w-5 h-5 flex-shrink-0" />
             Schedule a Strategy Call
             <motion.span
               className="inline-block"
@@ -114,14 +114,14 @@ export default function HeroSection() {
             href="https://vocalisia.web.app"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-secondary flex items-center gap-2"
+            className="btn-secondary flex items-center gap-2 justify-center"
           >
-            <Play className="w-5 h-5" />
+            <Play className="w-5 h-5 flex-shrink-0" />
             VocalisAI Live Demo
           </a>
           <a
             href="#services"
-            className="text-slate-400 hover:text-primary-400 transition-colors text-sm flex items-center gap-2"
+            className="text-slate-400 hover:text-primary-400 transition-colors text-sm flex items-center justify-center gap-2"
           >
             Explore Services →
           </a>
@@ -132,9 +132,9 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
-          className="mt-12 overflow-hidden"
+          className="mt-8 sm:mt-12 overflow-hidden w-full"
         >
-          <div className="flex gap-8 animate-[marquee_30s_linear_infinite] w-max">
+          <div className="flex gap-6 sm:gap-8 animate-[marquee_30s_linear_infinite] w-max">
             {[
               'Multi-LLM Agent Systems', 'AI Ethics & Alignment', 'Red Teaming & Safety Audits',
               'Voice AI Agents', 'Legacy System Modernization', 'Intelligent Automation',

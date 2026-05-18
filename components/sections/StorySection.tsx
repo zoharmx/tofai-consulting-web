@@ -86,7 +86,7 @@ export default function StorySection({
       
       <motion.div 
         style={{ opacity }}
-        className="max-w-4xl w-full relative z-10"
+        className="max-w-4xl w-full min-w-0 relative z-10"
       >
         <motion.div
           initial={{ opacity: 0, x: -20 }}
