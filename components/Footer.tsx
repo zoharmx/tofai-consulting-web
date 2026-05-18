@@ -28,8 +28,8 @@ export default function Footer() {
     social: [
       { name: 'LinkedIn', href: 'https://www.linkedin.com/in/eduardo-rodríguez-b364b720b', icon: <Linkedin className="w-5 h-5" /> },
       { name: 'GitHub', href: 'https://github.com/zoharmx', icon: <Github className="w-5 h-5" /> },
-      { name: 'Email', href: 'mailto:hoymismofletes@gmail.com', icon: <Mail className="w-5 h-5" /> },
-      { name: 'WhatsApp', href: 'https://wa.me/528114202112', icon: <MessageCircle className="w-5 h-5" /> },
+      { name: 'Email', href: 'mailto:ceo@tofaiconsulting.com', icon: <Mail className="w-5 h-5" /> },
+      { name: 'WhatsApp', href: 'https://wa.me/14695004798', icon: <MessageCircle className="w-5 h-5" /> },
     ],
   }
 
@@ -138,23 +138,28 @@ export default function Footer() {
             </a>
             <div className="mt-3">
               <a
-                href="mailto:hoymismofletes@gmail.com"
+                href="mailto:ceo@tofaiconsulting.com"
                 className="inline-flex items-center gap-2 text-slate-400 hover:text-primary-400 transition-colors text-sm"
               >
                 <Mail className="w-4 h-4" />
-                hoymismofletes@gmail.com
+                ceo@tofaiconsulting.com
               </a>
             </div>
-            <div className="mt-3">
+            <div className="mt-2">
               <a
-                href="https://wa.me/528114202112"
+                href="https://wa.me/14695004798"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-slate-400 hover:text-primary-400 transition-colors text-sm"
               >
                 <MessageCircle className="w-4 h-4" />
-                WhatsApp +52 811 420 2112
+                (469) 500-4798
               </a>
+            </div>
+            <div className="mt-2">
+              <p className="text-slate-500 text-xs leading-relaxed mt-2">
+                1111B S Governors Ave STE 44443<br />Dover, DE 19904
+              </p>
             </div>
           </div>
         </div>

@@ -66,7 +66,7 @@ export default function CTASection() {
           </a>
 
           <a
-            href="mailto:hoymismofletes@gmail.com"
+            href="mailto:ceo@tofaiconsulting.com"
             className="btn-secondary justify-center"
           >
             <MessageSquare className="w-5 h-5" />
@@ -142,7 +142,7 @@ export default function CTASection() {
           </a>
           {' • '}
           <a
-            href="https://wa.me/528114202112"
+            href="https://wa.me/14695004798"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary-400 hover:underline"

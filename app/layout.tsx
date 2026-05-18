@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: 'TOFAI Consulting — Enterprise AI Systems & Safety',
     template: '%s | TOFAI Consulting'
   },
-  description: 'TOFAI Consulting LLC delivers enterprise-grade AI: voice agents, multi-LLM systems, AI ethics & alignment research, red teaming, adversarial audits, legacy system modernization, and full-funnel marketing intelligence. Delaware LLC.',
+  description: 'Enterprise AI consulting: voice agents, multi-LLM systems, AI ethics & red teaming, legacy modernization, marketing intelligence. TOFAI Consulting LLC — Delaware.',
   keywords: [
     'AI consulting', 'voice AI agents', 'multi-LLM systems', 'AI ethics', 'AI alignment',
     'red teaming', 'adversarial audits', 'legacy modernization', 'AI safety', 'TOF Research Engine',
@@ -91,9 +91,14 @@ const jsonLd = {
       legalName: 'TOFAI Consulting LLC',
       address: {
         '@type': 'PostalAddress',
-        addressCountry: 'US',
+        streetAddress: '1111B S Governors Ave STE 44443',
+        addressLocality: 'Dover',
         addressRegion: 'DE',
+        postalCode: '19904',
+        addressCountry: 'US',
       },
+      email: 'ceo@tofaiconsulting.com',
+      telephone: '+1-469-500-4798',
       founders: [
         {
           '@type': 'Person',

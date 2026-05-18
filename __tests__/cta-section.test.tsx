@@ -38,12 +38,12 @@ describe('CTASection — TOFAI Consulting', () => {
     expect(screen.getByText(/Email Us Directly/i)).toBeInTheDocument()
   })
 
-  it('email CTA points to hoymismofletes gmail', () => {
+  it('email CTA points to official TOFAI email', () => {
     render(<CTASection />)
     const mailLink = document.querySelector('a[href*="mailto:"]')
     expect(mailLink).not.toBeNull()
     const href = mailLink?.getAttribute('href') || ''
-    expect(href).toContain('@')
+    expect(href).toContain('tofaiconsulting.com')
     expect(href).not.toContain('password')
     expect(href).not.toContain('secret')
   })

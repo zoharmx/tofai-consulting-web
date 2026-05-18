@@ -100,10 +100,10 @@ export default function ContactPage() {
                 <Mail className="w-8 h-8 text-primary-400 mb-4" />
                 <h3 className="font-semibold text-white mb-2">Email</h3>
                 <a
-                  href="mailto:hoymismofletes@gmail.com"
+                  href="mailto:ceo@tofaiconsulting.com"
                   className="text-slate-400 hover:text-primary-400 transition-colors text-sm"
                 >
-                  hoymismofletes@gmail.com
+                  ceo@tofaiconsulting.com
                 </a>
               </div>
 
@@ -125,14 +125,17 @@ export default function ContactPage() {
                 <MessageSquare className="w-8 h-8 text-primary-400 mb-4" />
                 <h3 className="font-semibold text-white mb-2">WhatsApp</h3>
                 <a
-                  href="https://wa.me/528114202112"
+                  href="https://wa.me/14695004798"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-primary-400 transition-colors text-sm"
                 >
-                  +52 811 420 2112
+                  (469) 500-4798
                 </a>
                 <p className="text-slate-400 text-sm mt-2">We respond within 24 hours.</p>
+                <p className="text-slate-500 text-xs mt-2">
+                  1111B S Governors Ave STE 44443<br />Dover, DE 19904
+                </p>
               </div>
 
               <div className="p-6 bg-gradient-to-br from-primary-500/10 to-accent-cyan/10 border border-primary-500/30 rounded-xl">
