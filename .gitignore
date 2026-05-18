@@ -1,0 +1,54 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# sensitive/private folders
+Proyectos Autorizados/
+Proyectos Autorizados.zip
+trabajos/
+images/
+
+# temporary files
+tmpclaude-*
+
+# private working folders
+v2/
+DDSMarketing/
+mejoras.txt
+
+# local settings
+.claude/settings.local.json
+
+# documentation (keep private)
+RESUMEN-EJECUTIVO.md
