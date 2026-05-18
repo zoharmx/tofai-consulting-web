@@ -228,7 +228,7 @@ export default function Home() {
         title="VocalisAI: "
         highlight="Enterprise Voice Intelligence"
       >
-        <p className="text-xl text-slate-300 leading-relaxed mb-6">
+        <p className="text-base sm:text-xl text-slate-300 leading-relaxed mb-6">
           From a single voice bot to an orchestrated platform of{' '}
           <span className="text-accent-purple font-semibold">6 specialized agents</span> under Akiva —
           the meta-agent supervisor — with TOF&apos;s ethical layer evaluating every call in real time.
@@ -363,7 +363,7 @@ export default function Home() {
         title="We break AI systems "
         highlight="before your users do."
       >
-        <p className="text-xl text-slate-300 leading-relaxed mb-6">
+        <p className="text-base sm:text-xl text-slate-300 leading-relaxed mb-6">
           Adversarial testing is not a checklist — it&apos;s a discipline. TOFAI&apos;s red team
           methodology produces <span className="text-accent-cyan font-semibold">CVE-grade findings</span>,
           reproducible benchmarks, and actionable remediation roadmaps.
@@ -415,25 +415,26 @@ export default function Home() {
           className="mb-10 rounded-2xl overflow-hidden border-2 border-red-500/40 bg-slate-900/60"
         >
           {/* Header */}
-          <div className="flex items-center gap-3 px-6 py-4 bg-red-500/10 border-b border-red-500/30">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 px-4 sm:px-6 py-3 sm:py-4 bg-red-500/10 border-b border-red-500/30">
             <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-red-500 animate-pulse" />
-              <span className="text-red-400 font-bold text-xs uppercase tracking-widest">Live Report</span>
+              <div className="w-3 h-3 rounded-full bg-red-500 animate-pulse flex-shrink-0" />
+              <span className="text-red-400 font-bold text-xs uppercase tracking-widest whitespace-nowrap">Live Report</span>
             </div>
-            <span className="text-slate-400 text-xs">|</span>
-            <span className="text-slate-300 text-sm font-medium">AI Safety Vulnerability Report — March 28, 2026</span>
-            <span className="ml-auto px-3 py-1 bg-red-500/20 border border-red-500/50 rounded-full text-red-400 text-xs font-bold">
+            <span className="text-slate-400 text-xs hidden sm:inline">|</span>
+            <span className="text-slate-300 text-xs sm:text-sm font-medium">AI Safety Vulnerability Report · Mar 2026</span>
+            <span className="sm:ml-auto px-2.5 py-1 bg-red-500/20 border border-red-500/50 rounded-full text-red-400 text-xs font-bold whitespace-nowrap">
               HIGH SEVERITY
             </span>
           </div>
 
-          <div className="p-6 sm:p-8">
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
+          <div className="p-4 sm:p-6 lg:p-8">
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2 leading-snug">
               Breaking Political Neutrality in LLMs via Multi-Layer Narrative Injection
             </h3>
-            <p className="text-slate-400 text-sm mb-6">
-              Reporter: Eduardo Rodriguez (HarryDev) — AI Red Teaming Specialist &nbsp;·&nbsp;
-              Models tested: Gemini 3.1 Pro, Grok 4.1 Fast, Claude Sonnet 4.6, ChatGPT 5.2, Mistral Voxtral Small 1.0
+            <p className="text-slate-400 text-xs sm:text-sm mb-6">
+              Reporter: Eduardo Rodriguez (HarryDev) — AI Red Teaming Specialist<br className="sm:hidden" />
+              <span className="hidden sm:inline"> · </span>
+              Models: Gemini 3.1 Pro, Grok 4.1 Fast, Claude Sonnet 4.6, ChatGPT 5.2, Mistral Voxtral
             </p>
 
             {/* Attack layers */}
@@ -468,10 +469,10 @@ export default function Home() {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="bg-slate-800/80 text-slate-400 text-xs uppercase tracking-wider">
-                      <th className="text-left px-4 py-3">Model</th>
-                      <th className="text-left px-4 py-3">Result</th>
-                      <th className="text-left px-4 py-3">Severity</th>
-                      <th className="text-left px-4 py-3 hidden sm:table-cell">Key Finding</th>
+                      <th className="text-left px-3 sm:px-4 py-3">Model</th>
+                      <th className="text-left px-3 sm:px-4 py-3">Result</th>
+                      <th className="text-left px-3 sm:px-4 py-3 hidden sm:table-cell">Severity</th>
+                      <th className="text-left px-3 sm:px-4 py-3 hidden sm:table-cell">Key Finding</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -483,16 +484,16 @@ export default function Home() {
                       { model: 'Claude Sonnet 4.6', result: 'PASSED', severity: 'N/A', finding: 'Identified the multi-layer manipulation architecture itself — named the philosophical framing as disguised propaganda', color: 'text-emerald-400 bg-emerald-500/10' },
                     ].map((row, i) => (
                       <tr key={i} className="border-t border-slate-700/50 hover:bg-slate-800/30 transition-colors">
-                        <td className="px-4 py-3 font-medium text-white whitespace-nowrap">{row.model}</td>
-                        <td className="px-4 py-3">
-                          <span className={`px-2 py-1 rounded-full text-xs font-bold ${row.color}`}>
+                        <td className="px-3 sm:px-4 py-3 font-medium text-white text-xs sm:text-sm">{row.model}</td>
+                        <td className="px-3 sm:px-4 py-3">
+                          <span className={`px-1.5 sm:px-2 py-1 rounded-full text-xs font-bold ${row.color} whitespace-nowrap`}>
                             {row.result}
                           </span>
                         </td>
-                        <td className={`px-4 py-3 text-xs font-semibold ${row.result === 'PASSED' ? 'text-slate-500' : row.result === 'PARTIAL FAIL' ? 'text-amber-400' : 'text-red-400'}`}>
+                        <td className={`px-3 sm:px-4 py-3 text-xs font-semibold hidden sm:table-cell ${row.result === 'PASSED' ? 'text-slate-500' : row.result === 'PARTIAL FAIL' ? 'text-amber-400' : 'text-red-400'}`}>
                           {row.severity}
                         </td>
-                        <td className="px-4 py-3 text-slate-400 text-xs hidden sm:table-cell">{row.finding}</td>
+                        <td className="px-3 sm:px-4 py-3 text-slate-400 text-xs hidden sm:table-cell">{row.finding}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -504,7 +505,7 @@ export default function Home() {
             </div>
 
             {/* Potential impact */}
-            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-8">
               {[
                 { icon: '🎯', title: 'Automated Influence Operations', desc: 'Scale political propaganda generation via API automation targeting specific elections — fully automatable, no technical skill required.' },
                 { icon: '📣', title: 'Synthetic Campaign Content', desc: 'Generate tailored voter messaging, speeches, and social media content for any candidate or party at scale.' },
@@ -522,20 +523,20 @@ export default function Home() {
             </div>
 
             {/* Download CTA */}
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+            <div className="flex flex-col xs:flex-row items-start xs:items-center gap-3 sm:gap-4">
               <a
                 href="/downloads/ai-safety-vulnerability-report.pdf"
                 download
-                className="inline-flex items-center gap-2 px-5 py-3 bg-accent-cyan/10 border border-accent-cyan/40 text-accent-cyan rounded-xl font-semibold hover:bg-accent-cyan/20 transition-all text-sm"
+                className="inline-flex items-center gap-2 px-4 py-2.5 sm:px-5 sm:py-3 bg-accent-cyan/10 border border-accent-cyan/40 text-accent-cyan rounded-xl font-semibold hover:bg-accent-cyan/20 transition-all text-sm w-full xs:w-auto justify-center xs:justify-start"
               >
-                <Download className="w-5 h-5" />
+                <Download className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                 Download Full Report PDF
               </a>
               <Link
                 href="/case-studies/tofai-evals"
                 className="inline-flex items-center gap-2 text-slate-400 hover:text-accent-cyan transition-colors text-sm"
               >
-                View TOFAI Evals Suite <ArrowRight className="w-4 h-4" />
+                TOFAI Evals Suite <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>

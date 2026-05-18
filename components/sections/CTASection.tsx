@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 export default function CTASection() {
   return (
-    <section className="section-container py-32">
+    <section className="section-container py-16 sm:py-32">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,7 +24,7 @@ export default function CTASection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-display font-bold mb-6 text-balance"
+          className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6 text-balance"
         >
           From challenge to{' '}
           <span className="gradient-text">production AI system</span>

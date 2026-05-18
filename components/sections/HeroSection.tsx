@@ -20,9 +20,9 @@ export default function HeroSection() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated Background Particles */}
+      {/* Animated Background Particles — reduced count for mobile performance */}
       <div className="absolute inset-0">
-        {[...Array(50)].map((_, i) => (
+        {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute w-1 h-1 bg-primary-400 rounded-full"
@@ -68,7 +68,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight"
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight"
         >
           Intelligence{' '}
           <span className="gradient-text">
@@ -80,7 +80,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto text-balance"
+          className="text-base sm:text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto text-balance"
         >
           TOFAI Consulting delivers enterprise AI — from{' '}
           <span className="text-white font-semibold">multi-LLM voice agents</span> and intelligent automation to{' '}
@@ -155,7 +155,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto"
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mt-12 sm:mt-16 max-w-4xl mx-auto"
           ref={ref}
         >
           {metrics.map((metric, i) => (
@@ -166,7 +166,7 @@ export default function HeroSection() {
               transition={{ duration: 0.5, delay: 1 + i * 0.1 }}
               className="text-center p-4 rounded-xl bg-slate-900/50 border border-primary-500/10 backdrop-blur-sm"
             >
-              <div className="text-3xl md:text-4xl font-bold text-primary-400 font-display">
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary-400 font-display">
                 {inView && (
                   <CountUp
                     end={metric.number}
@@ -186,18 +186,18 @@ export default function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="mt-12 flex flex-wrap gap-4 justify-center"
+          className="mt-10 sm:mt-12 flex flex-wrap gap-2 sm:gap-3 justify-center"
         >
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/50 border border-primary-500/20 rounded-full text-xs text-slate-400">
-            <Shield className="w-3 h-3 text-primary-400" />
+          <div className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-800/50 border border-primary-500/20 rounded-full text-xs text-slate-400">
+            <Shield className="w-3 h-3 text-primary-400 flex-shrink-0" />
             Google Cloud x Datadog Hackathon Finalist
           </div>
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/50 border border-primary-500/20 rounded-full text-xs text-slate-400">
-            <Zap className="w-3 h-3 text-accent-cyan" />
+          <div className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-800/50 border border-primary-500/20 rounded-full text-xs text-slate-400">
+            <Zap className="w-3 h-3 text-accent-cyan flex-shrink-0" />
             Google Gemini Live Hackathon Finalist
           </div>
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/50 border border-primary-500/20 rounded-full text-xs text-slate-400">
-            <Shield className="w-3 h-3 text-accent-purple" />
+          <div className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-800/50 border border-primary-500/20 rounded-full text-xs text-slate-400">
+            <Shield className="w-3 h-3 text-accent-purple flex-shrink-0" />
             Responsible Disclosure — AI Safety
           </div>
         </motion.div>

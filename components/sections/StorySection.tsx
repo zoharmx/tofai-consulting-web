@@ -72,7 +72,7 @@ export default function StorySection({
     <section 
       id={id}
       ref={ref}
-      className="story-section min-h-screen flex items-center justify-center relative py-20 px-6"
+      className="story-section min-h-screen flex items-center justify-center relative py-12 sm:py-20 px-4 sm:px-6"
     >
       {/* Animated Background Blur */}
       <motion.div 
@@ -86,7 +86,7 @@ export default function StorySection({
       
       <motion.div 
         style={{ opacity }}
-        className="max-w-4xl relative z-10"
+        className="max-w-4xl w-full relative z-10"
       >
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -104,7 +104,7 @@ export default function StorySection({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-8 leading-tight"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6 sm:mb-8 leading-tight"
         >
           {titleParts[0]}
           {highlight && (
@@ -121,7 +121,7 @@ export default function StorySection({
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-8"
+            className="text-base sm:text-xl md:text-2xl text-slate-300 leading-relaxed mb-6 sm:mb-8"
           >
             "{subtitle}"
           </motion.p>
