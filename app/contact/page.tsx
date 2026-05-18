@@ -219,8 +219,9 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">Service of Interest *</label>
+                    <label htmlFor="service" className="block text-sm font-medium text-slate-300 mb-2">Service of Interest *</label>
                     <select
+                      id="service"
                       {...register('service', { required: 'Please select a service' })}
                       className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all text-white text-base"
                     >
@@ -238,8 +239,9 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-slate-300 mb-2">Estimated Budget *</label>
+                    <label htmlFor="budget" className="block text-sm font-medium text-slate-300 mb-2">Estimated Budget *</label>
                     <select
+                      id="budget"
                       {...register('budget', { required: 'Please select a budget range' })}
                       className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all text-white text-base"
                     >
